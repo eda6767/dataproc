@@ -16,8 +16,14 @@ For this purpose we have to use account number, total amount of transaction and 
 
 <p align="center">
 
-<img width="600" alt="Zrzut ekranu 2023-09-23 o 17 43 11" src="https://github.com/eda6767/dataproc/assets/102791467/c8c6b9fd-4261-4892-9fd7-ffd9870ed8e1">
+<img width="700" alt="Zrzut ekranu 2023-09-23 o 17 43 11" src="https://github.com/eda6767/dataproc/assets/102791467/c8c6b9fd-4261-4892-9fd7-ffd9870ed8e1">
 
+
+</p>
+
+<p align="center">
+
+<img width="800" alt="Zrzut ekranu 2023-09-23 o 17 48 13" src="https://github.com/eda6767/dataproc/assets/102791467/c8561190-6216-423a-afe2-a9b5a049e1a8">
 
 </p>
 
