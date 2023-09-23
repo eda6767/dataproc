@@ -13,8 +13,6 @@ For this purpose we have to use account number, total amount of transaction and 
 <img width="800" alt="Zrzut ekranu 2023-09-23 o 17 32 12" src="https://github.com/eda6767/dataproc/assets/102791467/6e444932-57b9-42ce-9709-27fd95478f95">
 </p>
 
-
-
 <br/> 
 From every data source we are gonna read data from BigQuery table using following method:
 <br/> 
