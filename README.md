@@ -2,6 +2,8 @@
 
 <sub/>
 
+
+
 In this scenario the task is to match transaction on debit cards with transations on current accounts. We do not have any immediate key or indicator, that we could use.
 <br/> 
 
