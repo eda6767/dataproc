@@ -3,12 +3,12 @@
 <sub/>
 
 
-
-In this scenario the task is to match transaction on debit cards with transations on current accounts. We do not have any immediate key or indicator, that we could use.
+<br>
+In this scenario the task is to match transaction on debit cards with transations on current accounts. We do not have any primary key or indicator, that we could use for matching.
 <br/> 
-
+<br>
 For this purpose we have to use account number, total amount of transaction and location for specific transaction. 
-
+<br/> 
 
 <p align="center">
 
