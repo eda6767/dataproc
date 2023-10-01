@@ -110,3 +110,10 @@ gcloud dataproc clusters delete dataproc-demo2 --region ${REGION}
 ```
 gcloud dataproc jobs wait job-54195ea1 --project balmy-geography-374018 --region europe-west1
 ```
+
+<br/> 
+</br>
+
+```
+gcloud dataproc workflow-templates instantiate template-7ac4f --region=europe-west1
+```
