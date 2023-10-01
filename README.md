@@ -77,6 +77,18 @@ gcloud dataproc autoscaling-policies import dataproc_autoscaling --source=policy
 <br/> 
 </br>
 
+```
+export PROJECT='clean-sylph-377411'
+export CLUSTER_NAME=dataproc-demo2 
+export REGION=europe-west1
+
+gcloud dataproc clusters create ${CLUSTER_NAME} --region ${REGION} --zone europe-west1-b  --project ${PROJECT}  --master-machine-type n1-standard-2 --master-boot-disk-size 500 --image-version 2.0-debian10  --num-workers 2 --worker-machine-type n2-standard-4 --worker-boot-disk-size 500 --initialization-actions gs://goog-dataproc-initialization-actions-${REGION}/connectors/connectors.sh --metadata bigquery-connector-version=1.2.0 --metadata spark-bigquery-connector-version=0.21.0
+
+```
+
+<br/> 
+</br>
+
 
 ```
 gcloud dataproc clusters stop dataproc-demo2 --region ${REGION}
