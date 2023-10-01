@@ -73,3 +73,12 @@ At each stage of correct translation matching, the result will be saved to the t
 export REGION=europe-west1
 gcloud dataproc autoscaling-policies import dataproc_autoscaling --source=policy.yaml --region=${REGION}
 ```
+
+<br/> 
+</br>
+
+
+```
+gcloud dataproc clusters stop dataproc-demo2 --region ${REGION}
+gcloud dataproc clusters delete dataproc-demo2 --region ${REGION}
+```
