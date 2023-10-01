@@ -89,6 +89,14 @@ gcloud dataproc clusters create ${CLUSTER_NAME} --region ${REGION} --zone europe
 <br/> 
 </br>
 
+```
+gcloud dataproc jobs submit spark --properties spark.jars.packages=com.google.cloud.spark:spark-bigquery_2.11:0.9.1-beta
+```
+
+<br/> 
+</br>
+
+
 
 ```
 gcloud dataproc clusters stop dataproc-demo2 --region ${REGION}
