@@ -102,3 +102,11 @@ gcloud dataproc jobs submit spark --properties spark.jars.packages=com.google.cl
 gcloud dataproc clusters stop dataproc-demo2 --region ${REGION}
 gcloud dataproc clusters delete dataproc-demo2 --region ${REGION}
 ```
+
+<br/> 
+</br>
+
+
+```
+gcloud dataproc jobs wait job-54195ea1 --project balmy-geography-374018 --region europe-west1
+```
