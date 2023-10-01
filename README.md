@@ -51,4 +51,9 @@ At each stage of correct translation matching, the result will be saved to the t
         .save()
 ```
 
+<br/> 
+</br>
+<img width="500" alt="Zrzut ekranu 2023-10-1 o 12 37 08" src="https://github.com/eda6767/dataproc/assets/102791467/2a1f83e3-6e6a-4824-a8dc-9c68d7e6d43e">
+
+
 
