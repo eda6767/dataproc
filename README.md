@@ -63,6 +63,11 @@ At each stage of correct translation matching, the result will be saved to the t
 <br/> 
 </br>
 
+<img width="1255" alt="Zrzut ekranu 2023-10-1 o 12 44 20" src="https://github.com/eda6767/dataproc/assets/102791467/5336e286-5484-42bb-b3bb-f90078099c26">
+
+
+<br/> 
+</br>
 
 ```
 export REGION=europe-west1
