@@ -9,21 +9,30 @@
 In this scenario the task is to match transaction on debit cards with transations on current accounts. We do not have any primary key or indicator, that we could use for matching.
 For this purpose we have to use account number, total amount of transaction and location for specific transaction. </sub>
 
-<sub> Here we are gonna focuse more on different way how to launch dataproc job </sub>
-
-<br>
-<br/> 
-
 
 <p align="center"> 
 <img width="450" alt="Zrzut ekranu 2023-10-16 o 19 18 45" src="https://github.com/eda6767/dataproc/assets/102791467/b5c6afce-5e8e-44e2-bc7b-3be57b7e7583">
 </p>
 
 <p align="center">
-<img width="600" alt="Zrzut ekranu 2023-10-16 o 19 24 56" src="https://github.com/eda6767/dataproc/assets/102791467/179942cf-0e00-48d0-ba16-455b66e0e24c">
+
+<img width="450" alt="Zrzut ekranu 2023-10-16 o 19 38 15" src="https://github.com/eda6767/dataproc/assets/102791467/3952bb0a-3cf0-455b-92fa-53eea620df96">
 </p>
 
+<sub> Here we are gonna focuse more on technical aspects and different way how to launch dataproc job. As a first step we have to define parameters like _temporaryGcsBucket, viewsEnabled and materializationDataset_ 
+</sub>
+<br>
+<br/> 
 
+<sub>
+    
+```
+bucket="dataproc_mcc_proc"
+    spark.conf.set('temporaryGcsBucket', bucket)
+    spark.conf.set("viewsEnabled", "true")
+    spark.conf.set("materializationDataset", "dataproc")
+```
+</sub>
 
 <sub> From every data source we are gonna read data from BigQuery table using following method: </sub>
 
