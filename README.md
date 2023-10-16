@@ -26,6 +26,8 @@ For this purpose we have to use account number, total amount of transaction and 
 <br>
 <br/> 
 
+<sub> _viewsEnabled_ - this parameter enable to read from not only table, but also from views  </sub>
+
 <sub>
     
 ```
