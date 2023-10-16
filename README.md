@@ -9,10 +9,8 @@
 In this scenario the task is to match transaction on debit cards with transations on current accounts. We do not have any primary key or indicator, that we could use for matching.
 For this purpose we have to use account number, total amount of transaction and location for specific transaction. </sub>
 
+<sub> Here we are gonna focuse more on different way how to launch dataproc job </sub>
 
-
-<br>
-<br/> 
 <br>
 <br/> 
 
