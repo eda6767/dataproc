@@ -25,8 +25,10 @@ For this purpose we have to use account number, total amount of transaction and 
 <sub> _temporaryGcsBucket_  - this is a parameter required for writing data to BigQuery. Spark connector to BigQuery contains two write options - direct and indirect method while writing data into BigQuery. This is an optional parameter while indirect method is default method for writing data. So, if you are using indirect method - this requires defininf temporary GCS Bucket. _The connector writes the data to BigQuery by first buffering all the data into a Cloud Storage temporary table. Then it copies all data from into BigQuery in one operation._ Another options is direct method - there data is written directly to BigQuery using BigQuery Storage Write API. </sub>
 <br>
 <br/> 
-
-<sub> _viewsEnabled_ - this parameter enable to read from not only table, but also from views  </sub>
+<sub> _viewsEnabled_ - this parameter enable to read from not only table, but also from views  </sub> 
+<br>
+<br/> 
+<sub>  _materializationDataset_  - The dataset where the materialized view is going to be created. This dataset should be in same location as the view or the queried tables. </sub> 
 
 <sub>
     
