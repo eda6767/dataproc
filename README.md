@@ -21,6 +21,8 @@ For this purpose we have to use account number, total amount of transaction and 
 
 <sub> Here we are gonna focuse more on technical aspects and different way how to launch dataproc job. As a first step we have to define parameters like _temporaryGcsBucket, viewsEnabled and materializationDataset_ 
 </sub>
+
+<sub> _temporaryGcsBucket_  - this is a parameter required for writing data to BigQuery. Spark connector to BigQuery contains two write methods - direct and indirect method while writing data into BigQuery.  </sub>
 <br>
 <br/> 
 
