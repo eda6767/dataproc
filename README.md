@@ -74,6 +74,18 @@ At each stage of correct translation matching, the result will be saved to the t
 </sub>
 
 
+<sub> To use Dataproc cluster, first we have to enable Dataproc API, just by finding proper service and clicking Enable button, or using gcloud command as below </sub>
+
+<sub>
+    
+```
+gcloud config set project YOUR_PROJECT_ID
+gcloud services enable SERVICE_NAME
+gcloud services list --available
+```
+
+</sub>
+
 <br/> 
 </br>
 <img width="500" alt="Zrzut ekranu 2023-10-1 o 12 37 08" src="https://github.com/eda6767/dataproc/assets/102791467/2a1f83e3-6e6a-4824-a8dc-9c68d7e6d43e">
