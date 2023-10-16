@@ -85,14 +85,14 @@ gcloud services list --available
 ```
 
 </sub>
-
 <br/> 
 </br>
 <img width="500" alt="Zrzut ekranu 2023-10-1 o 12 37 08" src="https://github.com/eda6767/dataproc/assets/102791467/2a1f83e3-6e6a-4824-a8dc-9c68d7e6d43e">
-
-
 <br/> 
 </br>
+
+<sub> As as first method we are gonna create Dataproc manually and start Dataproc job using Google Cloud Console. </sub>
+
 <img width="600" alt="Zrzut ekranu 2023-10-1 o 12 39 48" src="https://github.com/eda6767/dataproc/assets/102791467/6a060c63-8cb5-4d8b-b16e-636638976757">
 
 <br/> 
