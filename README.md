@@ -79,14 +79,20 @@ At each stage of correct translation matching, the result will be saved to the t
 <br/> 
 </br>
 
+<sub>
+    
 ```
 export REGION=europe-west1
 gcloud dataproc autoscaling-policies import dataproc_autoscaling --source=policy.yaml --region=${REGION}
 ```
+    
+</sub>
 
 <br/> 
 </br>
 
+<sub>
+    
 ```
 export PROJECT='clean-sylph-377411'
 export CLUSTER_NAME=dataproc-demo2 
@@ -96,34 +102,46 @@ gcloud dataproc clusters create ${CLUSTER_NAME} --region ${REGION} --zone europe
 
 ```
 
+</sub>
+
 <br/> 
 </br>
 
+<sub>
+    
 ```
 gcloud dataproc jobs submit spark --properties spark.jars.packages=com.google.cloud.spark:spark-bigquery_2.11:0.9.1-beta
 ```
+</sub>
 
 <br/> 
 </br>
 
-
+<sub>
 
 ```
 gcloud dataproc clusters stop dataproc-demo2 --region ${REGION}
 gcloud dataproc clusters delete dataproc-demo2 --region ${REGION}
 ```
+</sub>
+
 
 <br/> 
 </br>
 
-
+<sub>
+    
 ```
 gcloud dataproc jobs wait job-54195ea1 --project balmy-geography-374018 --region europe-west1
 ```
+</sub>
 
 <br/> 
 </br>
 
+<sub>
+    
 ```
 gcloud dataproc workflow-templates instantiate template-7ac4f --region=europe-west1
 ```
+</sub>
