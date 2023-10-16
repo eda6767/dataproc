@@ -1,33 +1,37 @@
 # Dataproc on Google Cloud Platform 
 
-<sub/>
 
 
 <br>
+<br/> 
+
+<sub>
 In this scenario the task is to match transaction on debit cards with transations on current accounts. We do not have any primary key or indicator, that we could use for matching.
+For this purpose we have to use account number, total amount of transaction and location for specific transaction. </sub>
+
+
+
+<br>
 <br/> 
 <br>
-For this purpose we have to use account number, total amount of transaction and location for specific transaction. 
 <br/> 
 
-<p align="center">
 
-<img width="600" alt="Zrzut ekranu 2023-09-23 o 17 32 12" src="https://github.com/eda6767/dataproc/assets/102791467/6e444932-57b9-42ce-9709-27fd95478f95">
+<p align="center"> 
+<img width="450" alt="Zrzut ekranu 2023-10-16 o 19 18 45" src="https://github.com/eda6767/dataproc/assets/102791467/b5c6afce-5e8e-44e2-bc7b-3be57b7e7583">
+</p>
+
+<p align="center">
+<img width="600" alt="Zrzut ekranu 2023-10-16 o 19 24 56" src="https://github.com/eda6767/dataproc/assets/102791467/179942cf-0e00-48d0-ba16-455b66e0e24c">
 </p>
 
 
 
-<p align="center">
-
-<img width="600" alt="Zrzut ekranu 2023-09-23 o 17 48 13" src="https://github.com/eda6767/dataproc/assets/102791467/c8561190-6216-423a-afe2-a9b5a049e1a8">
-
-</p>
+<sub> From every data source we are gonna read data from BigQuery table using following method: </sub>
 
 
-<br/> 
-From every data source we are gonna read data from BigQuery table using following method:
-<br/> 
 
+<sub>
 
 ```
     query = "SELECT * FROM {table} where DUE_DT = {date}".format(table=table_name, date = date_in)
@@ -39,10 +43,13 @@ From every data source we are gonna read data from BigQuery table using followin
     crnt_acct_trx_fcd.show()
 ```
 
+</sub>
 
-<br/> 
-At each stage of correct translation matching, the result will be saved to the target table according to the following method
-<br/> 
+
+<sub>
+At each stage of correct translation matching, the result will be saved to the target table according to the following method </sub>
+
+<sub>
 
 ```
  result_1.write.format('bigquery') \
@@ -50,6 +57,9 @@ At each stage of correct translation matching, the result will be saved to the t
         .option('table', dpcrnt_acct_trx_fcd) \
         .save()
 ```
+
+</sub>
+
 
 <br/> 
 </br>
