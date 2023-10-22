@@ -168,12 +168,6 @@ gcloud dataproc jobs wait <JOB_ID> --project <PROJECT_ID> --region <REGION>
 <br/> 
 </br>
 
-<sub> Another way to submit jobs is to create a template within you can definine cluster and job. However, the disadvantage of this solution is that after an erroneously completed task, the cluster still exists, which generates unnecessary costs </sub>
+<sub> Another way to submit jobs is to create a template within you can definine cluster and job. However, the disadvantage of this solution is that after an erroneously completed task, the cluster still exists, which generates unnecessary costs. Therefore, I created a solution based on airflow, which is described in the project at the link below https://github.com/eda6767/cloud_composer_airflow  </sub>
 
 
-<sub>
-
-```
-gcloud dataproc workflow-templates instantiate template-7ac4f --region=europe-west1
-```
-</sub>
