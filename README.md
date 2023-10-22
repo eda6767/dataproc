@@ -168,7 +168,7 @@ gcloud dataproc jobs wait <JOB_ID> --project <PROJECT_ID> --region <REGION>
 <br/> 
 </br>
 
-<sub> Another way to submit jobs is to create a template within you can definine cluster and job.  </sub>
+<sub> Another way to submit jobs is to create a template within you can definine cluster and job. However, the disadvantage of this solution is that after an erroneously completed task, the cluster still exists, which generates unnecessary costs </sub>
 
 
 <sub>
