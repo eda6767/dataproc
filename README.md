@@ -157,6 +157,8 @@ gcloud dataproc clusters delete dataproc-demo2 --region ${REGION}
 
 <img width="600" alt="Zrzut ekranu 2023-10-22 o 13 26 17" src="https://github.com/eda6767/dataproc/assets/102791467/10e9cabb-f1ee-427c-80da-1f851febc2a8">
 
+<br/> 
+</br>
 
 <sub>
     
@@ -168,6 +170,8 @@ gcloud dataproc jobs wait <JOB_ID> --project <PROJECT_ID> --region <REGION>
 <br/> 
 </br>
 
-<sub> Another way to submit jobs is to create a template within you can definine cluster and job. However, the disadvantage of this solution is that after an erroneously completed task, the cluster still exists, which generates unnecessary costs. Therefore, I created a solution based on airflow, which is described in the project at the link below https://github.com/eda6767/cloud_composer_airflow  </sub>
+<sub> Another way to submit jobs is to create a template within you can definine cluster and job. However, the disadvantage of this solution is that after an erroneously completed task, the cluster still exists, which generates unnecessary costs. Therefore, I created a solution based on airflow, which is described in the project at the link below. </sub>
+
+<sub> https://github.com/eda6767/cloud_composer_airflow  </sub>
 
 
