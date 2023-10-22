@@ -123,36 +123,21 @@ gcloud dataproc clusters create ${CLUSTER_NAME} --region ${REGION} --zone europe
 
 <sub> Additionally, if we want to have control over the autoscaling of nodes, we can create the so-called autoscaling policy in the yaml file </sub>
 
-
-
-</br>
-
 <img width="1255" alt="Zrzut ekranu 2023-10-1 o 12 44 20" src="https://github.com/eda6767/dataproc/assets/102791467/5336e286-5484-42bb-b3bb-f90078099c26">
-
-
 <br/> 
 </br>
-
 <sub>
     
 ```
 export REGION=europe-west1
 gcloud dataproc autoscaling-policies import dataproc_autoscaling --source=policy.yaml --region=${REGION}
 ```
-    
 </sub>
 <br/> 
 </br>
 
-<sub>
-    
-```
-gcloud dataproc jobs submit spark --properties spark.jars.packages=com.google.cloud.spark:spark-bigquery_2.11:0.9.1-beta
-```
-</sub>
+<sub> If we want to stop of delete cluster, we can use commands as below </sub>
 
-<br/> 
-</br>
 
 <sub>
 
@@ -162,9 +147,16 @@ gcloud dataproc clusters delete dataproc-demo2 --region ${REGION}
 ```
 </sub>
 
-
 <br/> 
 </br>
+
+<sub> Now, when we have cluster ready, we are able to create job. This is an example how to do it using Google Console. We have to define job name, created previously cluster, complete the main PySpark file location in Cloud Bucket. </sub>
+
+
+<img width="600" alt="Zrzut ekranu 2023-10-22 o 13 27 16" src="https://github.com/eda6767/dataproc/assets/102791467/2a6fc2dc-31da-4e22-acce-44c083fb9241">
+
+<img width="600" alt="Zrzut ekranu 2023-10-22 o 13 26 17" src="https://github.com/eda6767/dataproc/assets/102791467/10e9cabb-f1ee-427c-80da-1f851febc2a8">
+
 
 <sub>
     
