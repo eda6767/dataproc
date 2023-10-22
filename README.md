@@ -121,7 +121,7 @@ gcloud dataproc clusters create ${CLUSTER_NAME} --region ${REGION} --zone europe
 </br>
 
 
-<sub> </sub>
+<sub> Additionally, if we want to have control over the autoscaling of nodes, we can create the so-called autoscaling policy in the yaml file </sub>
 
 
 
