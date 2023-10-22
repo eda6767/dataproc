@@ -168,8 +168,11 @@ gcloud dataproc jobs wait <JOB_ID> --project <PROJECT_ID> --region <REGION>
 <br/> 
 </br>
 
+<sub> </sub>
+
+
 <sub>
-    
+
 ```
 gcloud dataproc workflow-templates instantiate template-7ac4f --region=europe-west1
 ```
