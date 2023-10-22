@@ -161,7 +161,7 @@ gcloud dataproc clusters delete dataproc-demo2 --region ${REGION}
 <sub>
     
 ```
-gcloud dataproc jobs wait job-54195ea1 --project balmy-geography-374018 --region europe-west1
+gcloud dataproc jobs wait <JOB_ID> --project <PROJECT_ID> --region <REGION>
 ```
 </sub>
 
