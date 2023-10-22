@@ -91,11 +91,40 @@ gcloud services list --available
 <br/> 
 </br>
 
-<sub> As as first method we are gonna create Dataproc manually and start Dataproc job using Google Cloud Console. </sub>
+<sub> As as first method we are gonna create Dataproc manually and start Dataproc job using Google Cloud Console. For testing processes with not huge amount of data we could use Single Node option, but for out purpose, when we have quite big amount of data, let's use first option with 2 workers and 1 stanard node. </sub>
+
+<br/> 
+</br>
 
 <img width="600" alt="Zrzut ekranu 2023-10-1 o 12 39 48" src="https://github.com/eda6767/dataproc/assets/102791467/6a060c63-8cb5-4d8b-b16e-636638976757">
 
+
 <br/> 
+</br>
+
+<sub> Alternatively we can use gcloud command  with the appropriate properties. Please note that in our case we needed to define an initialization action consisting in installing the connector and, what is very important, defining metadata specifying the version of the connector for bigquery. </sub>
+
+
+<sub>
+    
+```
+export PROJECT='clean-sylph-377411'
+export CLUSTER_NAME=dataproc-demo2 
+export REGION=europe-west1
+
+gcloud dataproc clusters create ${CLUSTER_NAME} --region ${REGION} --zone europe-west1-b  --project ${PROJECT}  --master-machine-type n1-standard-2 --master-boot-disk-size 500 --image-version 2.0-debian10  --num-workers 2 --worker-machine-type n2-standard-4 --worker-boot-disk-size 500 --initialization-actions gs://goog-dataproc-initialization-actions-${REGION}/connectors/connectors.sh --metadata bigquery-connector-version=1.2.0 --metadata spark-bigquery-connector-version=0.21.0
+
+```
+ </sub>
+
+<br/> 
+</br>
+
+
+<sub> </sub>
+
+
+
 </br>
 
 <img width="1255" alt="Zrzut ekranu 2023-10-1 o 12 44 20" src="https://github.com/eda6767/dataproc/assets/102791467/5336e286-5484-42bb-b3bb-f90078099c26">
@@ -112,23 +141,6 @@ gcloud dataproc autoscaling-policies import dataproc_autoscaling --source=policy
 ```
     
 </sub>
-
-<br/> 
-</br>
-
-<sub>
-    
-```
-export PROJECT='clean-sylph-377411'
-export CLUSTER_NAME=dataproc-demo2 
-export REGION=europe-west1
-
-gcloud dataproc clusters create ${CLUSTER_NAME} --region ${REGION} --zone europe-west1-b  --project ${PROJECT}  --master-machine-type n1-standard-2 --master-boot-disk-size 500 --image-version 2.0-debian10  --num-workers 2 --worker-machine-type n2-standard-4 --worker-boot-disk-size 500 --initialization-actions gs://goog-dataproc-initialization-actions-${REGION}/connectors/connectors.sh --metadata bigquery-connector-version=1.2.0 --metadata spark-bigquery-connector-version=0.21.0
-
-```
-
-</sub>
-
 <br/> 
 </br>
 
